@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class RegisterController extends Controller
 {
     public function index(){
-        echo view('Register');
+        return view('Register');
     }
 }

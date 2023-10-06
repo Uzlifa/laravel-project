@@ -19,27 +19,13 @@ Route::get('/', function () {
     return view('wellcome');
 });
 
-Route::get('info', function () {
-    echo 'info';
+Route::get('info', function() {echo'info';
 });
 
-Route::get('register', function () {
-echo 'register';
-});
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/', function () {
-    echo 'bersyandaa';
-});
-
-Route::get('/', function () {
-    echo 'pinjem dulu seratus';
-});
 
 Route::get('/show', [NewsController::class, 'show']);
 Route::get('/create', [NewsController::class, 'create']);
 
-Route::get('RegisterController',[RegisterController::class,'index']);
+Route::get('/register',function(){
+    return view('register');
+});
